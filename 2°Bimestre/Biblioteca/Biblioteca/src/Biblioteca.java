@@ -5,7 +5,7 @@ public class Biblioteca {
     private String nome;
     private String dono;
     private List<Biblioteca> livros = new ArrayList();
-    private List<Biblioteca>funcionarios =new ArrayList();
+    private List<Biblioteca>funcionarios = new ArrayList();
 
     public Biblioteca(String nome, String dono) {
         this.nome = nome;
