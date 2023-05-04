@@ -1,0 +1,48 @@
+import java.util.Scanner;
+public static void main(String[] args){
+public class calculadora {
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        do {
+            System.out.println("Digite o primeiro número: ");
+            int num1 = ler.nextInt();
+
+            System.out.println("Digite o operador: ");
+            char opcao = ler.next().charAt(0);
+
+            if (opcao == '0')
+                break;
+
+            System.out.println("Digite o segundo número:  ");
+            int num2 = ler.nextInt();
+
+            int resp = 0;
+
+            switch (opcao) {
+
+                case '+':
+                    resp = num1 + num2;
+                    System.out.println(num1 + "+" + num2 + "=" + resp);
+                    break;
+
+                case '-':
+                    resp = num1 - num2;
+                    System.out.println(num1 + "-" + num2 + "=" + resp);
+                    break;
+
+                case '*':
+                    resp = num1 * num2;
+                    System.out.println(num1 + "*" + num2 + "=" + resp);
+                    break;
+
+                case '/':
+                    resp = num1/num2;
+                    System.out.println(num1 + "/" + num2 + "=" + resp);
+                    break;
+            }
+
+        } while (true);
+    }
+}
+}
+
