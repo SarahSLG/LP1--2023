@@ -1,27 +1,25 @@
-public class Dono {
-    private String nome;
-    private int cpf;
-
-    //construtores
-    public Dono(String nome, int cpf) {
-        this.nome = nome;
-        this.cpf = cpf;
-    }
-
-    //set e get
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public int getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(int cpf) {
-        this.cpf = cpf;
-    }
-}
+public class Dono { 
+     private String nome; 
+     private int CPF; 
+  
+     public Dono(String nome, int CPF) { 
+         this.nome = nome; 
+         this.CPF = CPF; 
+     } 
+  
+     public String getNome() { 
+         return nome; 
+     } 
+  
+     public void setNome(String nome) { 
+         this.nome = nome; 
+     } 
+  
+     public int getCPF() { 
+         return CPF; 
+     } 
+  
+     public void setCPF(int CPF) { 
+         this.CPF = CPF; 
+     } 
+ }
