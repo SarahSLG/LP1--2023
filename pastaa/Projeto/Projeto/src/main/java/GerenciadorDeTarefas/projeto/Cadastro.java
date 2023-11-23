@@ -28,6 +28,21 @@ public class Cadastro {
         GerenciadorApplication.mudarTela("Login");
     }
 
+   public void novoUsuario() {
+        boolean senhaIgual  = senhaConf.getText().equals(Csenha.getText());
+
+        if(!senhaIgual) {
+            return;
+        }
+
+        String senhaBdd = Csenha.getText();
+        String usuarioBdd = Cnome.getText();
+        String emailbdd = Cemail.getText();
+
+        Usuario usuarioA = new Usuario(usuarioBdd,emailbdd, senhaBdd);
+        System.out.println("Cadastrado!");
+    }
+
 
 
 
